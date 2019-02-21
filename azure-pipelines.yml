@@ -3,18 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
-pool:
-  vmImage: 'Ubuntu-16.04'
 
 variables:
   foo: bar
 
 jobs:
-
-# Set an output variable from job A
 - job: A
   pool:
     vmImage: 'vs2017-win2016'
