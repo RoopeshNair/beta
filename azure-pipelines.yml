@@ -18,7 +18,7 @@ jobs:
     name: echovar
 
   - script: echo $(foo)
-    name: echovar
+    name: foo
 
 # Map the variable into job B
 - job: B
@@ -31,4 +31,4 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
   - script: echo $(foo)
-    name: echovar
+    name: foo
